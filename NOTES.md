@@ -2,17 +2,19 @@
 
 > Pomodoro 1
 
-- Note
+    - Environment setup
+    - User stories
+    - UAT setup
 
 > Pomodoro 2
 
-- Note
+    -
 
 > Pomodoro 3
 
-- Note
+    - Note
 
 > Pomodoro 4
 
-- Note
+    - Note
 

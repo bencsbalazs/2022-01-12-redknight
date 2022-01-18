@@ -1,0 +1,78 @@
+# Exercise: 2022-01-12-redknight
+
+|[![Testing](https://github.com/bencsbalazs/2022-01-12-redknight/actions/workflows/test.yml/badge.svg)](https://github.com/bencsbalazs/2022-01-12-redknight/actions/workflows/test.yml)|[![Linting](https://github.com/bencsbalazs/2022-01-12-redknight/actions/workflows/lint.yml/badge.svg)](https://github.com/bencsbalazs/2022-01-12-redknight/actions/workflows/lint.yml)||
+
+> Installed with automatic script
+
+- Source file
+- Basic test file
+- Jest for testing (watch and coverage)
+- EsLint + Prettier for code style check
+- Complexity check
+
+## Exercise
+
+Red Knight is chasing two pawns. Which pawn will be caught, and where?
+
+https://www.codewars.com/kata/5fc4349ddb878a0017838d0f
+
+## Happy path User story 1
+
+> As a user, who wants to play with the redknight game
+
+> I want to input the position of the red knight and the pawns
+
+> So that game will tell me which pawn was caught and where
+
+## User story 2
+
+> As a user, who wants to play with the redknight game
+
+> I want to recieve feedback after my input
+
+> So that I can correct it if I made a mistake
+
+## User story 3
+
+> As a user, who wants to play with the redknight game
+
+> I want to be sure that the movement was made according to the rules
+
+> So that I can get a correct and fair result
+
+## Scenario 1
+
+> Given an input position that favours the black pawn
+
+> When the game has ran
+
+> Then the white pawn will be caught
+
+## Scenario 2
+
+> Given an input position that favours the white pawn
+
+> When the game has ran
+
+> Then the black pawn will be caught
+
+## User story - old
+
+- User test 1/1: The input should be 2 integers
+  - First one should be 0 <= 1
+  - Second one is between 2 =< 1000000
+- User test 1/2: The output shoud be an array
+  - First element should be black/white
+  - Second should be horizontal position what is between 2 and 1000000
+
+## User story 2
+
+> As a user, I have to make sure the positions of the figures are always correct
+
+- User test 2/1: Vertical position of the knight changes with each step.
+- User test 2/2: The horizontal move should be 2 squares, the vertical one should be 1
+- User test 2/3: The pawn should step forward one by one.
+- Horizontal position should increase 1
+- Vertical positions of the 2 pawns should remain the same.
+
+## User
