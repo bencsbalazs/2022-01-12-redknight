@@ -24,6 +24,22 @@ https://www.codewars.com/kata/5fc4349ddb878a0017838d0f
 
 > So that game will tell me which pawn was caught and where
 
+## Scenario 1.1
+
+> Given a user playing the game
+
+> When the input position favours black pawn
+
+> Then the white pawn will be caught
+
+## Scenario 1.2
+
+> Given a user playing the game
+
+> When the input position favours white pawn
+
+> Then the black pawn will be caught
+
 ## User story 2
 
 > As a user, who wants to play with the redknight game
@@ -31,6 +47,22 @@ https://www.codewars.com/kata/5fc4349ddb878a0017838d0f
 > I want to recieve feedback after my input
 
 > So that I can correct it if I made a mistake
+
+## Scenario 2.1
+
+> Given the user doesn't know the correct input
+
+> When the user enters an incorrect input
+
+> Then the user will see an error message
+
+## Scenario 2.2
+
+> Given the user has finished the game
+
+> When the user checks the output
+
+> Then the user will see the correct output
 
 ## User story 3
 
@@ -40,39 +72,50 @@ https://www.codewars.com/kata/5fc4349ddb878a0017838d0f
 
 > So that I can get a correct and fair result
 
-## Scenario 1
+## Scenario 3.1
 
-> Given an input position that favours the black pawn
+> Given the user has finished the game
 
-> When the game has ran
+> When the user checks the position changes of the knight
 
-> Then the white pawn will be caught
+> Then the user will see the vertical position changed with each step
 
-## Scenario 2
+## Scenario 3.2
 
-> Given an input position that favours the white pawn
+> Given the user has finished the game
 
-> When the game has ran
+> When the user checks the position changes of the knight
 
-> Then the black pawn will be caught
+> Then the user will see the horizontal position changed by 2 and the vertical position changed by 1 with each step
 
-## User story - old
+## Scenario 3.3
 
-- User test 1/1: The input should be 2 integers
-  - First one should be 0 <= 1
-  - Second one is between 2 =< 1000000
-- User test 1/2: The output shoud be an array
-  - First element should be black/white
-  - Second should be horizontal position what is between 2 and 1000000
+> Given the user has finished the game
 
-## User story 2
+> When the user checks the position changes of the pawns
 
-> As a user, I have to make sure the positions of the figures are always correct
+> Then the user will see the horizontal position changed by 1 for both pawns with each step
 
-- User test 2/1: Vertical position of the knight changes with each step.
-- User test 2/2: The horizontal move should be 2 squares, the vertical one should be 1
-- User test 2/3: The pawn should step forward one by one.
-- Horizontal position should increase 1
-- Vertical positions of the 2 pawns should remain the same.
+## Scenario 3.4
 
-## User
+> Given the user has finished the game
+
+> When the user checks the position changes of the pawns
+
+> Then the user will see the horizontal position is the same for both pawns with each step
+
+## Scenario 3.5
+
+> Given the user has finished the game
+
+> When the user checks the position changes of the pawns
+
+> Then the user will see the vertical position doesn't change for the pawns during the game
+
+## Scenario 3.6
+
+> Given the user has finished the game
+
+> When the user checks the position changes of the pawns and the knight
+
+> Then the user will see the pawns move first
