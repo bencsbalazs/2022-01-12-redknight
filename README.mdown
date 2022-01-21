@@ -16,6 +16,22 @@ Red Knight is chasing two pawns. Which pawn will be caught, and where?
 
 https://www.codewars.com/kata/5fc4349ddb878a0017838d0f
 
+## Description
+
+Input / Output
+Input will be two integers:
+
+N / n (Ruby) vertical position of Red Knight (0 or 1).
+P / p (Ruby) horizontal position of two pawns (between 2 and 1000000).
+Output has to be a tuple (python, haskell, Rust, prolog, C#), an array (javascript, ruby), an object (java), or a structure (C) with:
+
+"Black" or "White" - which pawn was caught
+Where it was caught (horizontal position)
+
+Example
+Input = 0, 4
+Output = ("White", 8)
+
 ## Happy path User story 1
 
 > As a user, who wants to play with the redknight game
@@ -31,6 +47,72 @@ https://www.codewars.com/kata/5fc4349ddb878a0017838d0f
 > When the input position favours black pawn
 
 > Then the white pawn will be caught
+
+### UT 1
+
+- RedKnight game is created
+
+### UT 2
+
+- RedKnight game expects input
+
+### UT 3
+
+- Redknight game should have red knight
+
+### UT 4
+
+- Red knight game should have a white pawn
+
+### UT 5
+
+- Red knight game should have a black pawn
+
+### UT 6
+
+- Red knight should have horizontal position
+
+### UT 7
+
+- Red knight should have vertical position
+
+### UT 8
+
+- White pawn should have horizontal position
+
+### UT 9
+
+- White pawn should have vertical position
+
+### UT 10
+
+- Black pawn should have horizontal position
+
+### UT 11
+
+- Black pawn should have vertical position
+
+### UT 12
+
+- Red knight should have position history
+
+### UT 13
+
+- Black pawn should have position history
+
+### UT 14
+
+- White pawn should have position history
+
+### UT 15
+
+- Red knight position history must be an array
+
+### UT 16
+
+- Red knight position history must be an array with at least one element
+
+### 17
 
 ## Scenario 1.2
 
