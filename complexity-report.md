@@ -1,4 +1,4 @@
-# Complexity report, 1/21/2022
+# Complexity report, 1/25/2022
 
 * Mean per-function logical LOC: 2
 * Mean per-function parameter count: 0
@@ -9,9 +9,9 @@
 * Change cost: 100%
 * Core size: 0%
 
-## /home/balazsbencs/Apps/Learning/XPFarm/2022-01-12-redknight/src/2022-01-12-redknight.js
+## /home/balazsbencs/Apps/Learning/XPFarm/2022-01-12-redknight/src/knight.js
 
-* Physical LOC: 19
+* Physical LOC: 14
 * Logical LOC: 2
 * Mean parameter count: 0
 * Cyclomatic complexity: 1

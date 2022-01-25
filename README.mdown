@@ -48,6 +48,14 @@ Output = ("White", 8)
 
 > Then the white pawn will be caught
 
+## Scenario 1.2
+
+> Given a user playing the game
+
+> When the input position favours white pawn
+
+> Then the black pawn will be caught
+
 ### UT 1
 
 - RedKnight game is created
@@ -114,13 +122,155 @@ Output = ("White", 8)
 
 ### 17
 
-## Scenario 1.2
+- Red knight position history must be an array with at least one element that has to have two fields (horizontal, vertical coords.)
 
-> Given a user playing the game
+### UT 18
 
-> When the input position favours white pawn
+- White pawn position history must be an array
 
-> Then the black pawn will be caught
+### UT 19
+
+- White pawn position history must be an array with at least one element
+
+### 20
+
+- White pawn position history must be an array with at least one element that has to have two fields (horizontal, vertical coords.)
+
+### UT 21
+
+- Black pawn position history must be an array
+
+### UT 22
+
+- Black pawn position history must be an array with at least one element
+
+### 23
+
+- Black pawn position history must be an array with at least one element that has to have two fields (horizontal, vertical coords.)
+
+### 24
+
+- First input parameter is the vertical position of the red knight
+
+### 25
+
+- Initial horizontal position of the red knight is always 0
+
+### 26
+
+- Second input parameter is the horizontal positon of the white pawn
+
+### 27
+
+- Second input parameter is the horizontal positon of the black pawn
+
+### 28
+
+- The initial verical position of the white pawn is always 0
+
+### 29
+
+- The initial verical position of the black pawn is always 1
+
+### 30
+
+- The game should return some result
+
+### 31
+
+- The result of the game should be an array
+
+### 32
+
+- Game result should be an array with 2 elements
+
+### 33
+
+- The first element of the result should be Black or White
+
+### 34
+
+- The second element is a number
+
+## User story 2
+
+> As a user, who wants to play with the redknight game
+
+> I want to be sure that the movement was made according to the rules
+
+> So that I can get a correct and fair result
+
+## Scenario 2.1
+
+> Given the user has finished the game
+
+> When the user checks the position changes of the knight
+
+> Then the user will see the vertical position changed with each step
+
+### UT 2.1.1
+
+- Knight should have a step rule
+
+### UT 2.1.2
+
+- Step rule should be an object
+
+### UT 2.1.3
+
+- Step rule object should have a vertical value
+
+### UT 2.1.4
+
+- Knight should be able to move
+
+### UT 2.1.5
+
+- move should be a function
+
+### UT 2.1.6
+
+- move should change the vertical position of the knight
+
+## Scenario 2.2
+
+> Given the user has finished the game
+
+> When the user checks the position changes of the knight
+
+> Then the user will see the horizontal position changed by 2 and the vertical position changed by 1 with each step
+
+## Scenario 2.3
+
+> Given the user has finished the game
+
+> When the user checks the position changes of the pawns
+
+> Then the user will see the horizontal position changed by 1 for both pawns with each step
+
+## Scenario 2.4
+
+> Given the user has finished the game
+
+> When the user checks the position changes of the pawns
+
+> Then the user will see the horizontal position is the same for both pawns with each step
+
+## Scenario 2.5
+
+> Given the user has finished the game
+
+> When the user checks the position changes of the pawns
+
+> Then the user will see the vertical position doesn't change for the pawns during the game
+
+## Scenario 3.6
+
+> Given the user has finished the game
+
+> When the user checks the position changes of the pawns and the knight
+
+> Then the user will see the pawns move first
 
 ## User story 2
 
@@ -145,59 +295,3 @@ Output = ("White", 8)
 > When the user checks the output
 
 > Then the user will see the correct output
-
-## User story 3
-
-> As a user, who wants to play with the redknight game
-
-> I want to be sure that the movement was made according to the rules
-
-> So that I can get a correct and fair result
-
-## Scenario 3.1
-
-> Given the user has finished the game
-
-> When the user checks the position changes of the knight
-
-> Then the user will see the vertical position changed with each step
-
-## Scenario 3.2
-
-> Given the user has finished the game
-
-> When the user checks the position changes of the knight
-
-> Then the user will see the horizontal position changed by 2 and the vertical position changed by 1 with each step
-
-## Scenario 3.3
-
-> Given the user has finished the game
-
-> When the user checks the position changes of the pawns
-
-> Then the user will see the horizontal position changed by 1 for both pawns with each step
-
-## Scenario 3.4
-
-> Given the user has finished the game
-
-> When the user checks the position changes of the pawns
-
-> Then the user will see the horizontal position is the same for both pawns with each step
-
-## Scenario 3.5
-
-> Given the user has finished the game
-
-> When the user checks the position changes of the pawns
-
-> Then the user will see the vertical position doesn't change for the pawns during the game
-
-## Scenario 3.6
-
-> Given the user has finished the game
-
-> When the user checks the position changes of the pawns and the knight
-
-> Then the user will see the pawns move first
