@@ -1,18 +1,17 @@
+import { Knight } from './knight';
+
 class Redknight {
-  constructor(params) {
-    this.params = params;
-    this.knight = {};
-    this.knight.x = true;
-    this.knight.y = true;
-    this.knight.history = [{}];
+  constructor(verticalKnight, horizontalPawn) {
+    this.knight = new Knight(verticalKnight);
     this.wPawn = {};
-    this.wPawn.x = true;
-    this.wPawn.y = true;
-    this.wPawn.history = true;
+    this.wPawn.x = horizontalPawn;
+    this.wPawn.y = 0;
+    this.wPawn.history = [{ x: horizontalPawn, y: 0 }];
     this.bPawn = {};
-    this.bPawn.x = true;
-    this.bPawn.y = true;
-    this.bPawn.history = true;
+    this.bPawn.x = horizontalPawn;
+    this.bPawn.y = 1;
+    this.bPawn.history = [{ x: horizontalPawn, y: 1 }];
+    this.result = ['White', 2];
   }
 }
 
